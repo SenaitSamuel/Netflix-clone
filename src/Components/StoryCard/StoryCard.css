@@ -1,0 +1,197 @@
+.storyCard {
+  position: relative;
+  border-bottom: 8px solid #222;
+  padding: 50px 5%;
+  background: 0 0;
+  color: #fff;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+
+.storyCard:nth-child(3) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-flow: row-reverse;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: reverse;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
+}
+.storyCard__text {
+  width: 52%;
+  height: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -moz-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  padding: 0 3rem 0 0;
+  z-index: 3;
+}
+.storyCard__title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+.storyCard__subtitle {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+.storyCard__body {
+  width: 48%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -moz-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.storyCard__body-container {
+  position: relative;
+  overflow: hidden;
+  margin: -10% -5% -5% 0;
+}
+.storyCard__body-img {
+  position: relative;
+  z-index: 2;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+.storyCard__body-item {
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.storyCard__body-video {
+  width: 100%;
+  height: 100%;
+}
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.storyCard__body-image {
+  margin: 0 1em 0 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -moz-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.storyCard__body-text {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+}
+.text-0 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.text-2 {
+  color: #0071eb;
+  font-size: 0.75em;
+  font-weight: 400;
+}
+.StoryCard__center-pixel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 950px) and (max-width: 1449px),
+  only screen and (min-width: 1450px) {
+  .storyCard {
+    padding: 70px 45px;
+  }
+  .text-0 {
+    font-size: 1em;
+  }
+  .text-2 {
+    font-size: 0.9em;
+  }
+  .storyCard__body-item:after {
+    height: 3.75em;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .storyCard,
+  .storyCard:nth-child(3) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .storyCard__text {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .storyCard__title {
+    font-size: 2.5rem;
+  }
+  .storyCard__subtitle {
+    font-size: 1.25rem;
+  }
+  .storyCard__body {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1em;
+  }
+  .storyCard__body-container {
+    margin: -10% 0 0 0;
+  }
+}

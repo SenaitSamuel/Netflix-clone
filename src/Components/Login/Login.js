@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import Form from '../Form/Form';
 import './Login.css';
-import LoginBody from './LoginBody';
+import SignIn from '../SignIn/SignIn';
 
 function Login() {
     const [signIn, setSignIn] = useState(false)
@@ -22,9 +23,17 @@ function Login() {
                 className='login__button'>Sign In
                 </button>
                 <div className='login__gradient'></div>
-                <LoginBody
-                signIn={signIn}
-                handleSignIn={handleSignIn} />
+                {signIn ? (
+                <SignIn/>
+
+            ):(
+                <Form handleSignIn={handleSignIn}
+                title='Unlimited films, Tv programmes and more.'
+                subtitle='Watch anywhere. Cancel at any time.'
+                subtitle2='Ready to watch? Enter your email to create 
+                or restart your membership.' />
+            )
+            }
             </div>          
         </div>
     )

@@ -1,4 +1,4 @@
-.loginBody {
+.form {
   position: absolute;
   top: 30%;
   margin-left: auto;
@@ -10,23 +10,24 @@
   left: 0;
   right: 0;
 }
-.loginBody > h1 {
+.form > h1 {
   font-size: 3.125rem;
   margin-bottom: 20px;
 }
-.loginBody > h2 {
+.form > h2 {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 30px;
 }
-.loginBody > h3 {
+.form > h3 {
   font-size: 1.3rem;
   font-weight: 400;
 }
-.loginBody__input {
+
+.form__input {
   margin: 20px;
 }
-.loginBody__input > form > input {
+.form__input > form > input {
   padding: 10px;
   outline-width: 0;
   height: 30px;
@@ -34,7 +35,7 @@
   border: none;
   max-width: 600px;
 }
-.loginBody__getStarted {
+.form__getStarted {
   padding: 16px 20px;
   font-size: 1rem;
   color: #ffff;
