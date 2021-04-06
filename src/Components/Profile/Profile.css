@@ -30,8 +30,9 @@
 .profile__detail > h2 {
   background-color: grey;
   padding: 15px;
-  font-size: 15px;
+  font-size: 20px;
   padding-left: 20px;
+  text-transform: capitalize;
 }
 .profile__signOut {
   padding: 10px 20px;
@@ -45,6 +46,7 @@
 }
 .profile__plans {
   margin-bottom: 20px;
+  padding: 20px;
 }
 .profile__plans > h3 {
   border-bottom: 1px solid #28202d;

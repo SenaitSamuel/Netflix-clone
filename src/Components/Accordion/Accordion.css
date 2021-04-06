@@ -1,0 +1,93 @@
+.accordion {
+  display: flex;
+  border-bottom: 8px solid #222;
+  color: #fff;
+  justify-content: center;
+}
+.accordion__container {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+.accordion__title {
+  font-size: 3.125rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: white;
+  text-align: center;
+}
+
+.accordion__list {
+  margin: 1.25em auto;
+  max-width: 815px;
+}
+.accordion__item {
+  list-style-type: none;
+  margin: 0 0 8px 0;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.accordion__item--header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 1px;
+  font-size: 50px;
+  font-weight: normal;
+  background: #303030;
+  padding: 0.8em 1.2em 0.8em 1.2em;
+  user-select: none;
+  align-items: center;
+  cursor: pointer;
+}
+.MuiSvgIcon-root {
+  fill: #fff;
+  cursor: pointer;
+}
+
+.accordion__item--body {
+  background: #303030;
+  overflow: hidden;
+  text-align: left;
+}
+.open {
+  max-height: 1200px;
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+.closed {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+.accordion__item--body > span {
+  display: block;
+  padding: 1.2em;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 950px) and (max-width: 1449px),
+  only screen and (min-width: 1450px) {
+  .accordion {
+    padding: 70px 45px;
+  }
+  .accordion__container {
+    font-size: 1.25rem;
+  }
+  .accordion__title {
+    font-size: 35px;
+  }
+  .accordion__list {
+    width: 90%;
+    margin: 2em auto;
+  }
+  .accordion__item--header {
+    font-size: 27px;
+  }
+  .accordion__item--body {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

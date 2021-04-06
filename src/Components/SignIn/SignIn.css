@@ -1,9 +1,16 @@
 .signIn {
   max-width: 300px;
   padding: 70px;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 30%;
+  z-index: 1;
   margin-left: auto;
   margin-right: auto;
-  background: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  color: #ffff;
+  left: 0;
+  right: 0;
 }
 .signIn > form {
   display: grid;
@@ -32,6 +39,14 @@
   color: #fff;
   border-radius: 5px;
   background-color: #e50914;
+  opacity: 0.6;
+}
+.signIn__green {
+  background-color: #2eb67d !important;
+  opacity: 0.6;
+}
+.signIn > form > button:hover {
+  opacity: 1;
 }
 .signIn > form > h4 {
   text-align: left;
