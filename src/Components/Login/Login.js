@@ -12,11 +12,7 @@ function Login() {
   return (
     <div className="login">
       <div className="login__background">
-        <img
-          className="login__logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png"
-          alt="Netflix Logo"
-        />
+        <h1 className="login__logo">NetFlix</h1>
         <button onClick={handleSignIn} className="login__button">
           Sign In
         </button>
